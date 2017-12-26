@@ -1,0 +1,120 @@
+a{
+    text-decoration: none;
+}
+.TopicList{
+    width: 90%;
+    /* max-width: 1400px;
+    min-width: 960px; */
+    margin: 15px auto;
+    min-height: 400px;
+}
+
+.content{
+    margin-bottom: 13px;
+}
+.TopicList>.content>.header{
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 3px 3px 0 0;
+}
+
+.TopicList>.content>.header>.topic-tab{
+    margin: 0 10px;
+    color: #80bd01;
+}
+.TopicList>.content>.header>.current-tab{
+    background-color: #80bd01;
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 3px;
+    
+}
+.TopicList>.inner{
+    padding: 0;
+    border-radius: 0 0 3px 3px;
+}
+.TopicList>.inner>.topic_list{
+    margin: 0;
+}
+.TopicList>.inner>.topic_list>.cell{
+    padding-right: 10px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+}
+.TopicList>.inner>.topic_list>.cell:nth-child(1){
+    border-top: none;
+}
+.inner{
+    line-height: 2em;
+}
+.inner a{
+    color: #778087;
+}
+.pull-left{
+    float: left;
+}
+.user_avatar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+.cell{
+    font-size: 14px;
+}
+.cell .reply_count{
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+}
+.cell .count_of_replies{
+    color: #9e78c0;
+}
+.cell .count_seperator{
+    margin: 0 1px;
+    font-size: 10px;
+}
+
+.cell .count_of_visits{
+    font-size: 10px;
+    color:#b4b4b4;
+}
+
+.put_good, .put_top{
+    background: #80bd01;
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 12px;
+}
+.topic_title{
+     color: #333;
+}
+.topic_title:visited{
+    color: #888;
+}
+a.topic_title{
+    max-width: 70%;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media(max-width:979px){
+
+    .reply_count{
+        position: absolute;
+        bottom: 0;
+        left: 85px;
+        text-align: left;
+        line-height: 2em;
+        font-size: 10px;
+    }
+    .topic_title_wrapper{
+        padding-left: 40px;
+    }
+}

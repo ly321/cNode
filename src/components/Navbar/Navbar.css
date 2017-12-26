@@ -1,0 +1,84 @@
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+ content: '';
+ display: block;
+ height: 0;
+ width: 0;
+ visibility: hidden;
+ clear: both;
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 9;
+    width: 100%;
+    position: relative;
+    background: #444;
+    font-size: 13px;
+    overflow: visible;
+    
+}
+.navbar-inner {
+    background: 0 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    min-height: 40px;
+}
+.navbar .container{
+ 
+    width: 100%;
+    min-width: 960px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.navbar .brand{
+    width: 120px;
+    padding: 3px 20px;
+    height: 34px;
+    line-height: 34px;
+    color: #ccc;
+    font-weight: 700;
+    text-shadow: none;
+    display: block;
+    float: left;
+}
+.navbar ul{
+    position: relative;
+    left: 0;
+    display: block;
+    margin: 0 10px 0 0;
+}
+.navbar ul li{
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    line-height: 20px;
+}
+.navbar ul li a{
+    text-shadow: none;
+    color: #ccc;
+    float: none;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+@media(max-width:979px){
+    .navbar {
+        margin: 0 5px;
+        z-index: 999;
+        width: auto!important;
+    }
+    .navbar  .container{
+        width: 100%;
+        min-width: 0;
+    }
+}
+/* import {Router,Route,Link} from 'react-router'; */
