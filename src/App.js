@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <Provider className="App" store={store}>
-        <RouterConfig></RouterConfig>
+        <RouterConfig location={this.props.location}></RouterConfig>
       </Provider>
     );
   }

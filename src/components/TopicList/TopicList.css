@@ -95,6 +95,7 @@ a{
     color: #888;
 }
 a.topic_title{
+    margin-left: 5px;
     max-width: 70%;
     white-space: nowrap;
     display: inline-block;
@@ -103,6 +104,13 @@ a.topic_title{
     line-height: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.topiclist-tab{
+    background-color: #e5e5e5;
+    color: #999;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
 }
 @media(max-width:979px){
 

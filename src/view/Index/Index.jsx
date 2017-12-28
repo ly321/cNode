@@ -9,7 +9,7 @@ class Index extends Component{
         return(
             <div className="index">
                 <Navbar></Navbar>
-                <TopicList></TopicList>
+                <TopicList location={this.props.location}></TopicList>
             </div>
         )
     }

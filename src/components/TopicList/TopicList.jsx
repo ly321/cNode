@@ -11,28 +11,35 @@ function mapStateToProps(state){
 }
 function mapDispatchToProps(dispatch){
     return{
-        init(){
-            dispatch(getTopicList(''));
+        init(query=""){
+            dispatch(getTopicList(query));
         },
     }
 }
 function TopicType(props){
-    const isTop=props.isTop,isGood=props.isGood;
+    const isTop=props.isTop,isGood=props.isGood,tab=props.tab;
     if(isTop){
         return <span className="put_top">置顶</span>
     }else{
         if(isGood){
             return <span className="put_good">精华</span>
-        }else{
+        }else if(tab==='ask'){
             return <span className="topiclist-tab">问答</span>
+        }else if(tab==='share'){
+            return <span className="topiclist-tab">分享</span>
+        }else{
+            return true;
         }
     }
 
 }
 class TopicList extends Component {
 
-    componentDidMount(){
+    componentDidMount(){    
         this.props.init();
+    }
+    componentDidUpdate(){
+        this.props.init(this.props.location.pathname);
     }
     render() {
         return (
@@ -67,7 +74,7 @@ class TopicList extends Component {
                                       
                                     </span>
                                     <div className="topic_title_wrapper">
-                                            <TopicType isTop={item.top} isGood={item.good}></TopicType>
+                                            <TopicType isTop={item.top} isGood={item.good} tab={item.tab}></TopicType>
                                             <a href={"https://cnodejs.org/topic/"+item.id} className="topic_title">
                                                 {item.title}
                                             </a>
