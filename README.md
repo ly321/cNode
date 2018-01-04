@@ -8,7 +8,7 @@ $ npm install
 $ npm start
 ```
 ## show
-![image](http://om1hdlq49.bkt.clouddn.com/cNode01.png){:height="50%" width="50%"}
+![image](http://om1hdlq49.bkt.clouddn.com/cNode01.png)
 ![image](http://om1hdlq49.bkt.clouddn.com/cNode02.png)
 ![image](http://om1hdlq49.bkt.clouddn.com/cNode03.png)
 ![image](http://om1hdlq49.bkt.clouddn.com/cNode04.png)
