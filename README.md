@@ -1,5 +1,7 @@
 # cNode
-just for react-react-router-redux test
+just for react-react-router-redux test.  
+>use cNode API to write this project . just for study and fun.  
+>the project does't have the articles' details page
 
 ## usage
 ```
