@@ -5,7 +5,7 @@ just for react-react-router-redux test.
 
 ## usage
 ```
-$ git clone https://github.com/ly321/cNode.git
+$ git clone https://github.com/sillyY/cNode.git
 $ npm install
 $ npm start
 ```
