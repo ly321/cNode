@@ -12,7 +12,7 @@ class Navbar extends Component {
                 <div className="navbar-inner clearfix">
                     <div className="container">
                         <a className="brand" href="/">
-                            <img src="//o4j806krb.qnssl.com/public/images/cnodejs_light.svg" alt="logo" />
+                            <img src="//static2.cnodejs.org/public/images/cnodejs_light.svg" alt="logo" />
                         </a>
                         <ul>
                             <li><a href="/">首页</a></li>
